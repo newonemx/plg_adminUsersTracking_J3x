@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="user" method="upgrade">
+    <name>Admin - Registro de modificaciones de usuarios </name>
+    <author>Adventa</author>
+    <creationDate>Feb 2023</creationDate>
+    <copyright></copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>cto@newone.mx</authorEmail>
+    <authorUrl></authorUrl>
+    <version>1.0.0</version>
+    <description>plugin para guardar un antes y un despues de los cambios que se hacen a los usuarios en el gestor de usuarios</description>
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <files>
+        <filename plugin="plg_adminuserstracking">plg_adminuserstracking.php</filename>
+        <folder>sql</folder>
+    </files>
+</extension>
